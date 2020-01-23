@@ -151,7 +151,7 @@ class AllNotesTableViewController: UIViewController, UITableViewDelegate, UITabl
    
    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
     {
-        let filtered = items.filter { $0.titleName.lowercased().contains(searchText.lowercased())}
+        let filtered = items.filter { $0.titleName.lowercased().contains(searchText.lowercased()) || $0.description.lowercased().contains(searchText.lowercased())}
                 
         if filtered.count>0
         {
