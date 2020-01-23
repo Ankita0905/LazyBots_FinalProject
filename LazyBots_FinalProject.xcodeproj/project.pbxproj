@@ -14,6 +14,15 @@
 		E069130023D9159E0055CAFD /* LazyBots_FinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E06912FE23D9159E0055CAFD /* LazyBots_FinalProject.xcdatamodeld */; };
 		E069130223D915A00055CAFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E069130123D915A00055CAFD /* Assets.xcassets */; };
 		E069130523D915A00055CAFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E069130323D915A00055CAFD /* LaunchScreen.storyboard */; };
+		E069130F23D916790055CAFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069130E23D916790055CAFD /* Constants.swift */; };
+		E069131123D916CC0055CAFD /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069131023D916CC0055CAFD /* Notes.swift */; };
+		E069131423D9189B0055CAFD /* AddCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069131323D9189B0055CAFD /* AddCategoryVC.swift */; };
+		E069131623D918BD0055CAFD /* AllNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069131523D918BD0055CAFD /* AllNotesTableViewController.swift */; };
+		E069131823D918DA0055CAFD /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069131723D918DA0055CAFD /* AddNoteVC.swift */; };
+		E069131A23D918EA0055CAFD /* NotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069131923D918EA0055CAFD /* NotesCell.swift */; };
+		E069131C23D918F90055CAFD /* MapVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069131B23D918F90055CAFD /* MapVCViewController.swift */; };
+		E069131E23D9190E0055CAFD /* ViewNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069131D23D9190E0055CAFD /* ViewNotesVC.swift */; };
+		E069132023D919240055CAFD /* tabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069131F23D919240055CAFD /* tabbarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		E069130123D915A00055CAFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E069130423D915A00055CAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E069130623D915A00055CAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E069130E23D916790055CAFD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E069131023D916CC0055CAFD /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		E069131323D9189B0055CAFD /* AddCategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryVC.swift; sourceTree = "<group>"; };
+		E069131523D918BD0055CAFD /* AllNotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllNotesTableViewController.swift; sourceTree = "<group>"; };
+		E069131723D918DA0055CAFD /* AddNoteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
+		E069131923D918EA0055CAFD /* NotesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCell.swift; sourceTree = "<group>"; };
+		E069131B23D918F90055CAFD /* MapVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVCViewController.swift; sourceTree = "<group>"; };
+		E069131D23D9190E0055CAFD /* ViewNotesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewNotesVC.swift; sourceTree = "<group>"; };
+		E069131F23D919240055CAFD /* tabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabbarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +76,10 @@
 		E06912F423D9159E0055CAFD /* LazyBots_FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				E069130D23D916010055CAFD /* Model */,
+				E069131223D916E90055CAFD /* Controllers */,
 				E06912F523D9159E0055CAFD /* AppDelegate.swift */,
 				E06912F723D9159E0055CAFD /* SceneDelegate.swift */,
-				E06912F923D9159E0055CAFD /* ViewController.swift */,
 				E06912FB23D9159E0055CAFD /* Main.storyboard */,
 				E069130123D915A00055CAFD /* Assets.xcassets */,
 				E069130323D915A00055CAFD /* LaunchScreen.storyboard */,
@@ -68,6 +87,30 @@
 				E06912FE23D9159E0055CAFD /* LazyBots_FinalProject.xcdatamodeld */,
 			);
 			path = LazyBots_FinalProject;
+			sourceTree = "<group>";
+		};
+		E069130D23D916010055CAFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E069130E23D916790055CAFD /* Constants.swift */,
+				E069131023D916CC0055CAFD /* Notes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E069131223D916E90055CAFD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E06912F923D9159E0055CAFD /* ViewController.swift */,
+				E069131323D9189B0055CAFD /* AddCategoryVC.swift */,
+				E069131523D918BD0055CAFD /* AllNotesTableViewController.swift */,
+				E069131723D918DA0055CAFD /* AddNoteVC.swift */,
+				E069131923D918EA0055CAFD /* NotesCell.swift */,
+				E069131B23D918F90055CAFD /* MapVCViewController.swift */,
+				E069131D23D9190E0055CAFD /* ViewNotesVC.swift */,
+				E069131F23D919240055CAFD /* tabbarViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +184,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E069130F23D916790055CAFD /* Constants.swift in Sources */,
 				E06912FA23D9159E0055CAFD /* ViewController.swift in Sources */,
+				E069131423D9189B0055CAFD /* AddCategoryVC.swift in Sources */,
+				E069131C23D918F90055CAFD /* MapVCViewController.swift in Sources */,
+				E069131823D918DA0055CAFD /* AddNoteVC.swift in Sources */,
+				E069131E23D9190E0055CAFD /* ViewNotesVC.swift in Sources */,
 				E06912F623D9159E0055CAFD /* AppDelegate.swift in Sources */,
+				E069132023D919240055CAFD /* tabbarViewController.swift in Sources */,
+				E069131A23D918EA0055CAFD /* NotesCell.swift in Sources */,
 				E069130023D9159E0055CAFD /* LazyBots_FinalProject.xcdatamodeld in Sources */,
 				E06912F823D9159E0055CAFD /* SceneDelegate.swift in Sources */,
+				E069131123D916CC0055CAFD /* Notes.swift in Sources */,
+				E069131623D918BD0055CAFD /* AllNotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
