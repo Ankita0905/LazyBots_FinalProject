@@ -194,7 +194,7 @@ class AllNotesTableViewController: UIViewController, UITableViewDelegate, UITabl
                
 //               cell.categoryLabel?.text = " ".self.searcharray[indexPath.row].categoryName;
                cell.titleLabel?.text =   "  \(self.searcharray[indexPath.row].titleName)";
-               cell.descLabel?.text =   "  \(self.searcharray[indexPath.row].categoryName)";
+               cell.descLabel?.text =   "  \(self.searcharray[indexPath.row].description)";
                cell.categoryLabel?.text =   "  \(self.searcharray[indexPath.row].categoryName)";
         
         
@@ -214,7 +214,7 @@ class AllNotesTableViewController: UIViewController, UITableViewDelegate, UITabl
         }
     else{
             cell.titleLabel?.text =   "  \(self.items[indexPath.row].titleName)";
-            cell.descLabel?.text =   "  \(self.items[indexPath.row].categoryName)";
+            cell.descLabel?.text =   "  \(self.items[indexPath.row].description)";
             cell.categoryLabel?.text =   "  \(self.items[indexPath.row].categoryName)";
         
 //        cell.titleLabel?.text = self.items[indexPath.row].titleName;

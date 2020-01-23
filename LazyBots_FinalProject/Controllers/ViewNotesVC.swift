@@ -43,7 +43,7 @@ class ViewNotesVC: UIViewController {
 //
                 geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
                   if error != nil {
-        //            print("something went horribly wrong")
+       
                   }
                   if let placemarks = placemarks {
                     placemark = placemarks.first
