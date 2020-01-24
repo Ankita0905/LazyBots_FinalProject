@@ -1,6 +1,6 @@
 //
 //  AllNotesTableViewController.swift
-// LazyBots_FinalProject
+//  LazyBots_FinalProject
 //
 //  Created by Ankita Jain on 2020-01-22.
 //  Copyright © 2020 Ankita Jain. All rights reserved.
@@ -114,7 +114,7 @@ class AllNotesTableViewController: UIViewController, UITableViewDelegate, UITabl
                                 
                             
                                 nota.createdAt = item.value(forKey: "created") as! Int64
-                                
+                                nota.audioString = item.value(forKey: "audiopath") as! String
                                 
                                 nota.lat = item.value(forKey: "latitude") as! Double
                                 nota.long = item.value(forKey: "longitude") as! Double

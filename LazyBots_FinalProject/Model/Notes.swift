@@ -17,6 +17,7 @@ class Note{
     var long : Double;
     var categoryName : String;
     var imageData: Data;
+    var audioString: String
     
     init() {
       
@@ -28,6 +29,7 @@ class Note{
         self.long = Double();
         self.createdAt = Int64();
         self.imageData = Data();
+        self.audioString = String();
     }
     
 }
