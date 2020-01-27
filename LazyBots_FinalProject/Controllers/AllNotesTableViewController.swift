@@ -114,7 +114,9 @@ class AllNotesTableViewController: UIViewController, UITableViewDelegate, UITabl
                                 
                             
                                 nota.createdAt = item.value(forKey: "created") as! Int64
-                                nota.audioString = item.value(forKey: "audiopath") as! String
+                                if let audioString = item.value(forKey: "audiopath") as? String{
+                                    nota.audioString = audioString
+                                }
                                 
                                 nota.lat = item.value(forKey: "latitude") as! Double
                                 nota.long = item.value(forKey: "longitude") as! Double
@@ -128,22 +130,7 @@ class AllNotesTableViewController: UIViewController, UITableViewDelegate, UITabl
                         print("Failed")
                     }
         
-        
-//    let fetchRequest : NSFetchRequest<NSFetchRequestResult> =
-//    NSFetchRequest(entityName: "Notes")
-//    do {
-//    let result = try dataManager.fetch(fetchRequest)
-//    listArray = result as! [NSManagedObject]
-//    print(listArray.count)
-//    for item in listArray {
-//    let product = item.value(forKey: "title") as! String
-//
-//    items.append(product)
-//
-//    }
-//    } catch {
-//    print ("Error retrieving data")
-//    }
+     
     }
 
     

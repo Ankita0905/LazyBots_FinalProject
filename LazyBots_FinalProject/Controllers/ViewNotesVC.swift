@@ -99,7 +99,7 @@ class ViewNotesVC: UIViewController, AVAudioPlayerDelegate  {
             if FileManager.default.fileExists(atPath: url!.path)
                {
                  //  record_btn_ref.isEnabled = false
-                   play_btn_ref.setTitle("pause", for: .normal)
+                   play_btn_ref.setTitle("Stop", for: .normal)
                    prepare_play()
                    audioPlayer.play()
                    isPlaying = true

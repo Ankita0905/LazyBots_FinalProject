@@ -361,7 +361,7 @@ class AddNoteVC: UIViewController , CLLocationManagerDelegate, UINavigationContr
     }
     
     @IBAction func selectCategoryBTN(_ sender: UIButton) {
-        print("cat selected")
+        print("category selected")
         self.categoryPicker.isHidden = false;
     }
     /*
